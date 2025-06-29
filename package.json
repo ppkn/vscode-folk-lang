@@ -1,0 +1,25 @@
+{
+  "name": "vscode-folk-lang",
+  "displayName": "Folk",
+  "description": "Syntax highlighting for folk.computer",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "folk",
+      "aliases": ["Folk", "folk"],
+      "extensions": [".folk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "folk",
+      "scopeName": "source.folk",
+      "path": "./syntaxes/folk.tmLanguage.json"
+    }]
+  }
+}
